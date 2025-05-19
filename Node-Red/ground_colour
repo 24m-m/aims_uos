@@ -1,0 +1,7 @@
+//ground colour
+const myMaterial = new BABYLON.StandardMaterial("ground_material", scene);
+myMaterial.diffuseTexture = new BABYLON.Texture("https://raw.githubusercontent.com/24m-m/aims_uos/main/Node-Red/metal/metal_0081_color_1k.jpg", scene);
+myMaterial.specularTexture = new BABYLON.Texture("https://raw.githubusercontent.com/24m-m/aims_uos/main/Node-Red/metal/metal_0081_roughness_1k.jpg", scene);
+myMaterial.emissiveTexture = new BABYLON.Texture("https://raw.githubusercontent.com/24m-m/aims_uos/main/Node-Red/metal/metal_0081_normal_directx_1k.png", scene);
+myMaterial.ambientTexture = new BABYLON.Texture("https://raw.githubusercontent.com/24m-m/aims_uos/main/Node-Red/metal/metal_0081_ao_1k.jpg", scene);
+scene.getMeshByName('ground').material = myMaterial;
